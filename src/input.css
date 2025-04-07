@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    h1, h2 {
+        @apply font-bold
+    }
+    p {
+        @apply text-sm
+    }
+}
+
+@layer components {
+    .container {
+        @apply max-w-[90rem] p-6 w-full mx-auto;
+    }
+}
+
+@layer utilities {
+    .btn {
+        @apply inline-block py-2.5 px-2 rounded-md bg-blue-600 text-white font-bold uppercase w-[120px] text-sm hover:shadow-lg hover:shadow-blue-500/40
+    }
+}
