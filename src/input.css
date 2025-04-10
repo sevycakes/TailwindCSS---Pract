@@ -188,6 +188,43 @@
     .info__cardContent {
         @apply md:grid md:grid-cols-3;
     }
+
+    /* COFFEE MENU */
+    
+    .menuCoffee__nav {
+        @apply bg-lightgreen pt-10;
+    }
+    .menuCoffee__nav h4 {
+        @apply text-[clamp(24px,4vw,30px)] font-semibold text-center  md:pb-6;
+    }
+    .menuCoffee__nav ul {
+        @apply flex items-center justify-center mt-6;
+    }
+    .menuCoffee__nav ul li {
+        @apply px-4 pb-5 border-b-4 border-transparent;
+    }
+    .menuCoffee__nav ul li.active {
+        @apply border-b-4 border-berde;
+    }
+    .menuCoffee__nav ul li a {
+        @apply text-[clamp(18px,4vw,24px)] font-semibold;
+    }
+    .coffee__item {
+        @apply absolute transition-all top-8 opacity-0 md:grid md:grid-cols-[_2fr,_2fr] md:items-center md:max-w-[50rem] md:left-[25%];
+    }
+    .coffee__item.active {
+        @apply opacity-100 transition-all;
+    }
+    .coffee__text {
+        @apply flex flex-col gap-4 mt-4;
+    }
+    .coffee__text h5 {
+        @apply text-xl font-semibold text-center;
+    }
+    .coffee__text p {
+        @apply text-center text-base;
+    }
+
 }
 
 @layer utilities {
